@@ -72,9 +72,11 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.7.0-alpha01")
 
     // Room components
-    implementation "androidx.room:room-runtime:2.5.1"
     kapt "androidx.room:room-compiler:2.5.1"
+    implementation "androidx.room:room-runtime:2.5.1"
     implementation "androidx.room:room-ktx:2.5.1"
+    implementation "androidx.room:room-paging:2.5.1"
+    androidTestImplementation "androidx.room:room-testing:2.5.1"
 
     // Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
@@ -83,6 +85,7 @@ dependencies {
 
     // Paging 3.0
     implementation 'androidx.paging:paging-compose:1.0.0-alpha20'
+    implementation 'androidx.paging:paging-runtime:3.2.0-alpha06'
 
     // KotlinX Serialization
     implementation "org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.1"

@@ -8,7 +8,7 @@ import com.codemachine.borutoapp.data.local.dao.HeroRemoteKeyDao
 import com.codemachine.borutoapp.domain.model.Hero
 import com.codemachine.borutoapp.domain.model.HeroRemoteKey
 
-@Database(entities = [Hero::class, HeroRemoteKey::class], version = 3)
+@Database(entities = [Hero::class, HeroRemoteKey::class], version = 1)
 @TypeConverters(DatabaseConverter::class)
 abstract class BorutoDatabase : RoomDatabase() {
 
